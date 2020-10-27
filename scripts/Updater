@@ -1,0 +1,31 @@
+@echo off
+echo     ______________________________________________________
+echo      ____        _                   ____ _           _
+echo     / ___^|  ___ ^| ^|_ ___  ___       / ___^| ^|__   __ _^| ^|_
+echo     \___ \ / _ \^| __/ _ \/ __^|_____^| ^|   ^| '_ \ / _` ^| __^|
+echo      ___) ^| (_) ^| ^|^| (_) \__ \_____^| ^|___^| ^| ^| ^| (_^| ^| ^|_
+echo     ^|____/ \___/ \__\___/^|___/      \____^|_^| ^|_^|\__,_^|\__^|
+echo     ______________________________________________________
+echo.
+echo     #     #
+echo     #     #  #####   #####     ##     #####  ######  #####
+echo     #     #  #    #  #    #   #  #      #    #       #    #
+echo     #     #  #    #  #    #  #    #     #    #####   #    #
+echo     #     #  #####   #    #  ######     #    #       #####
+echo     #     #  #       #    #  #    #     #    #       #   #
+echo      #####   #       #####   #    #     #    ######  #    #
+echo.
+echo.
+echo.
+echo Updating ChatClient.exe, please wait...
+timeout 4 > NUL
+DEL ChatClient.exe
+attrib -h ChatClient.TEMP
+ren ChatClient.TEMP ChatClient.exe
+echo ~~~ Update Completed ~~~
+echo.
+echo Starting the updated ChatClient.exe...
+timeout 3 > NUL
+start ChatClient.exe
+attrib -h Updater.bat
+DEL "%~f0"
