@@ -29,3 +29,6 @@ The program is already pre-compiled in dist folder.
 ```
 So far, ChatClient can only work on Windows Operating Systems, since it is using the 'msvcrt' library from the MS VC++ runtime in order to handle text in cmd.
 ```
+
+## Run Demo:
+![Screenshot](https://user-images.githubusercontent.com/10964246/116659223-ed39a300-a999-11eb-8822-554f8c4fe6ea.PNG)
